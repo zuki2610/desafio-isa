@@ -1,0 +1,28 @@
+[
+  {
+    "desc": "Compo importar tus productos sin intermediarios, genera ganancias 100% garantizado.",
+    "id": "P001",
+    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9080-784dcc87ec2c",
+    "clave": ["Importaciones", "Cursos", "Barco", "Avión"],
+    "name": "Importaciones",
+    "price": "1500$"
+  },
+  {
+    "desc": "Aprenderas a elegir los productos con mayor salida en el mercado, los que generaran mayores ganancias para ti",
+    "id": "P002",
+    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fcheese-164872_640_com.jpg?alt=media&token=18b2b821-4d0d-43f2-a1c6-8c57bc388fab",
+    "clave": ["cursos", "productos", "venta", "éxito"],
+    "name": "Productos con éxito",
+    "price": "2500$"
+  },
+  {
+    "desc": "Conoceras las mejores herramientas para emprender en este ambito, lograras generar ingresos al terminar este curso.",
+    "id": "P003",
+    "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-ac54-90f6c31eb3e3",
+    "ingredients": ["cursos", "emprendimiento", "digital", "ganancias"],
+    "name": "Emprendimiento Digital",
+    "price": "5000$"
+  }
+]
+
+  

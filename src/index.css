@@ -1,13 +1,199 @@
-body {
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*ESTILOS DEL HEADER*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+  background-color: #FEB2A8;
+  height: 27vh;
+}
+.logoMobile{
+  width: 18vw;
+  height: 27vh;
+}
+.texttitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25vw;
+}
+.carritoLleno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  margin-left: 24vw;
+  padding-top: 10vh;
+}
+.hover5:hover {
+  color: rgb(140, 126, 150);
+  cursor: pointer;
+  transform: scale(1);
+}
+.texttitle {
+  color: #232c50;
+}
+.imgMobile {
+  height: 60vh;
+  margin-left: 13vw;
+}
+.heroContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.textHero {
+  color: #232c50;
+  font-weight: 700;
+  font-size: 7vh;
+}
+.textHero {
+  margin-left: 6vw;
+}
+.subTextHero {
+  color: #232c50;
+  font-weight: 400;
+  font-size: 4vh;
+  margin-top: 2vh;
+  margin-left: 6vw;
+}
+.btnHero {
+  background-color: #e1b2ac;
+  border: 1px solid #5c4e4c;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5vh;
+  padding: 10px; 
+}
+
+.btnContainer {
+  margin-top: 3vh;
+  margin-left: 6vw;
+  margin-bottom: 5vh;
+}
+.banner {
+  height: 12vh;
+  background-color: #CEABB1;
+}
+.bannerText {
+  color: #232C50;
+  font-weight: 700;
+  font-size: 4vh;
+  margin-left: 33vw;
+  margin-top: 2vh;
+  padding-top: 3vh;
+}
+.bgCursos {
+  background-color: #e4e3e8f8;
+  height: 68vh;
+  border-bottom: 0;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  overflow: hidden;
+}
+.cardCurso {
+  margin-left: 14vw;
+  background-color: #feb2a89e;
+  opacity: 70%;
+  box-shadow:  0vh 0vh 15vh 0vh #7e7878;
+}
+
+.cardExperiencia {
+    height: 26vh;
+    background-color: #fffcfc91;
+    position: relative;
+    margin: 4vh 2vw 4vh 2vw;
+    text-align: center;
+    line-height: 25px;
+    padding: 10vh 0 0 0;
+    box-shadow:  0vh 0vh 15vh 0vh #7e7878;
+}
+.experienciaMobile {
+    position: absolute;
+    z-index: 50;
+    top: -4vh;
+    left: 47%;
+    height: 12vh;
+    width: 12vh;
+}
+/*ESTILOS DEL FOOTER*/
+footer {
+  background-color: #CEABB1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerdesk {
+  display: none;
+}  
+.inputContainer {
+  margin-left: 10vw;
+}
+input {
+  border-radius: 5vw;
+  padding: 10px 66px;
+  padding-left: 9px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-menu,
+a {
+  color: white;
+  padding: 10px;
+  line-height: 35px;
+}
+
+.footer-social, li {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  text-decoration: none;
+
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+.hover3:hover {
+  background-color: rgba(139, 72, 191, 0.7);
+  cursor: pointer;
+}
+.hover1:hover {
+  color: rgba(139, 72, 191, 1);
+  cursor: pointer;
+  transform: scale(3);
+}
+.hover2:hover {
+  color: rgb(156, 127, 178);
+  cursor: pointer;
+  transform: scale(2);
+}
+.expMobile{
+  display: none;
+}
+
+/*DESKTOP STYLES */
