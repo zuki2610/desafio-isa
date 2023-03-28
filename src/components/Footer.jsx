@@ -1,7 +1,7 @@
 import React from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Image } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="form 4 pt-4 inputContainer">
             <form action="get">
                 <input type="email" placeholder="Update in your inbox..."></input>
-                <button className="btnHero hover3 ms-2">Go</button>
+                <Button className="btnHero hover3 ms-2">Go</Button>
             </form>
         </div>
         <div className="container-footer">
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="form">
             <form action="get">
                 <input type="email" placeholder="Ingresa tu correo..."></input>
-                <button className="btnHero hover3">Go</button>
+                <Button className="btnHero hover3">Go</Button>
             </form>
             <p className="copyright secondary 6">Copyright 2020. All Rights Reserved <br/>ISABEL PALACIOS</p>
         </div>     

@@ -3,7 +3,7 @@
     "desc": "Compo importar tus productos sin intermediarios, genera ganancias 100% garantizado.",
     "id": "P001",
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/exportaciones.jpg",
-    "clave": ["Importaciones", "Cursos", "Barco", "Avión"],
+    "clave": ["Importaciones", "Cursos"],
     "name": "Importaciones",
     "price": "1500$"
   },
@@ -11,7 +11,7 @@
     "desc": "Aprenderas a elegir los productos con mayor salida en el mercado, los que generaran mayores ganancias para ti",
     "id": "P002",
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/productos.jpg",
-    "clave": ["cursos", "productos", "venta", "éxito"],
+    "clave": ["Cursos ", "Productos "],
     "name": "Productos con éxito",
     "price": "2500$"
   },
@@ -19,7 +19,7 @@
     "desc": "Conoceras las mejores herramientas para emprender en este ambito, lograras generar ingresos al terminar este curso.",
     "id": "P003",
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/digitaltransf.jpg",
-    "ingredients": ["cursos", "emprendimiento", "digital", "ganancias"],
+    "clave": ["Cursos ", "Emprendimiento"],
     "name": "Emprendimiento Digital",
     "price": "5000$"
   }

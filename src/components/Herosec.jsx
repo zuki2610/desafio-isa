@@ -1,6 +1,6 @@
 import React from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Hero = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
             <h1 className="textHero">Emprende con éxito<br/> con los secretos de <br/>Caroline Sada</h1>
             <p className="subTextHero">Soluciones Financieras Para Emprendedores</p>
             <div className="btnContainer">
-                <buttom className="btnHero hover3">Contactar</buttom>
+                <Button className="btnHero hover3">Contactar</Button>
             </div>
         </div>
         </div>

@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/desafio-isa/home" element={<Home />} />
           <Route path="/desafio-isa/carrito" element={<Carrito />} />
-          <Route path="/desafio-isa/detalles" element={<Detalles />} /> 
+          <Route path="/desafio-isa/detalles/:id" element={<Detalles />} /> 
           <Route exact path="/desafio-isa" element={<Home />} />
           <Route path='/' element={<Home />} />
         </Routes>
