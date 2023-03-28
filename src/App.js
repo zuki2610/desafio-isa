@@ -3,21 +3,31 @@ import React from 'react';
 import Detalles from './components/Detalles';
 import Carrito from './components/Carrito';
 import Home from './components/Home';
+import MyContext from './MyContext';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-function App() {
+const App = () => {
+  const [carrito, setCarrito] = React.useState([]);
+  const [total, setTotal] = React.useState(0);
+  const [cantidad, setCantidad] = React.useState(0);
+  
+  const globalState = {carrito, setCarrito, total, setTotal, cantidad, setCantidad};
+
+
   return (
-    <>
-    <BrowserRouter>
-      <main>
-        <Routes>
-          <Route path="/desafio-isa/home" element={<Home />} />
-          <Route path="/desafio-isa/carrito" element={<Carrito />} />
-          <Route path="/desafio-isa/detalles/:id" element={<Detalles />} /> 
-          <Route exact path="/desafio-isa" element={<Home />} />
-          <Route path='/' element={<Home />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+    <> 
+    <MyContext.Provider value={globalState}>
+      <BrowserRouter>
+        <main>
+          <Routes>
+            <Route path="/desafio-isa/home" element={<Home />} />
+            <Route path="/desafio-isa/carrito" element={<Carrito />} />
+            <Route path="/desafio-isa/detalles/:id" element={<Detalles />} /> 
+            <Route exact path="/desafio-isa" element={<Home />} />
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </MyContext.Provider>
     </>
   );
 }

@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Image } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate } from "react-router-dom";
+import MyContext from "../MyContext";
 
 const Header = () => {
+  const { cantidad } = useContext(MyContext);
   const navigate = useNavigate();
+  
   const redireccionHome = () => {
     navigate("/desafio-isa/home");
   };
+
 
   return (
     <>
@@ -26,7 +30,7 @@ const Header = () => {
             </div>
             <div>
               <span className="carritoLleno hover5">
-                0<i className="bi bi-cart-check-fill"></i>
+                {cantidad}<i className="bi bi-cart-check-fill"></i>
               </span>
             </div>
           </div>

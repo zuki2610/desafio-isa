@@ -1,20 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Image, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import MyContext from "../MyContext";
 
 const Cursos = () => {
   const [cursos, setCursos] = useState([]);
+  const { carrito, setCarrito, cantidad, setCantidad } = useContext(MyContext);
+
   const navigate = useNavigate();
   const getCursos = async () => {
     const data = await fetch(process.env.PUBLIC_URL + "/cursos.json");
     const cursos = await data.json();
     setCursos(cursos);
   };
+
   const verDetalle = (id) => {
     navigate(`/desafio-isa/detalles/${id}`);
   };
+
+  const agregarCarrito = (curso) => {
+    
+    
+    setCarrito([...carrito, curso]);
+
+    setCantidad(cantidad + 1);
+
+    console.log(carrito);
+  }; 
   useEffect(() => {
     getCursos();
   }, []);
@@ -32,7 +46,7 @@ const Cursos = () => {
             <div
               className="text-card cardCurso rounded"
               style={{ width: "18rem" }}
-              key = {curso.id}
+              key={curso.id}
             >
               <Image src={curso.img} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -49,10 +63,10 @@ const Cursos = () => {
                   >
                     Ver mas
                   </Button>
-                  <Button type="button " className="btn btn-success ms-5 mb-2">
+                  <Button type="button" className="btn btn-success ms-5 mb-2" onClick={() => { agregarCarrito(curso) }}>
                     +
                   </Button>
-                  <Button type="button " className="btn btn-danger ms-2 mb-2">
+                  <Button type="button" className="btn btn-danger ms-2 mb-2" onClick={() => { agregarCarrito(curso) }}>
                     -
                   </Button>
                 </div>

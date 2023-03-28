@@ -5,7 +5,6 @@ import { Image } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 
 const Carrito = () => { 
-    
     Swal.fire({
         position: 'top-end',
         icon: 'cart',
