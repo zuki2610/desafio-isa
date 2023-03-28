@@ -100,17 +100,22 @@ code {
 }
 .bgCursos {
   background-color: #e4e3e8f8;
-  height: 68vh;
+  height: 69vh;
   border-bottom: 0;
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
   overflow: hidden;
 }
+.contenedorCard {
+  display: flex;
+  flex-direction: row;
+}
 .cardCurso {
-  margin-left: 14vw;
+  margin-left: 11vw;
   background-color: #feb2a89e;
   opacity: 70%;
   box-shadow:  0vh 0vh 15vh 0vh #7e7878;
+  color: rgb(39, 38, 38);
 }
 
 .cardExperiencia {

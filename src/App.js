@@ -1,20 +1,24 @@
 import './index.css';
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Herosec';
-import Cursos from './components/Cursos';
-import Experiencias from './components/Experiencias';
-import Footer from './components/Footer';
+import Detalles from './components/Detalles';
+import Carrito from './components/Carrito';
+import Home from './components/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
-    <Header />
-    <Hero />
-    <Cursos />
-    <Experiencias />
-    <Footer />
-    </div>
+    <>
+    <BrowserRouter>
+      <main>
+        <Routes>
+          <Route path="/desafio-isa/home" element={<Home />} />
+          <Route path="/desafio-isa/carrito" element={<Carrito />} />
+          <Route path="/desafio-isa/detalles" element={<Detalles />} /> 
+          <Route exact path="/desafio-isa" element={<Home />} />
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+    </>
   );
 }
-
 export default App;
