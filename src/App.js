@@ -3,19 +3,15 @@ import React from 'react';
 import Detalles from './components/Detalles';
 import Carrito from './components/Carrito';
 import Home from './components/Home';
-import MyContext from './MyContext';
+import { MyContext } from './MyContext';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
-  const [carrito, setCarrito] = React.useState([]);
-  const [total, setTotal] = React.useState(0);
-  const [cantidad, setCantidad] = React.useState(0);
-  
-  const globalState = {carrito, setCarrito, total, setTotal, cantidad, setCantidad};
+
 
 
   return (
     <> 
-    <MyContext.Provider value={globalState}>
+    <MyContext.Provider>
       <BrowserRouter>
         <main>
           <Routes>
