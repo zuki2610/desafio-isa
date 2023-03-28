@@ -1,37 +1,19 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Image, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import MyContext from "../MyContext";
+import  Context  from "../MyContext";
 
 const Cursos = () => {
-  const [cursos, setCursos] = useState([]);
-  const { carrito, setCarrito, cantidad, setCantidad } = useContext(MyContext);
+
+  const {  cursos, agregarCarrito, formatNumber, eliminarCarrito } = useContext(Context);
 
   const navigate = useNavigate();
-  const getCursos = async () => {
-    const data = await fetch(process.env.PUBLIC_URL + "/cursos.json");
-    const cursos = await data.json();
-    setCursos(cursos);
-  };
 
   const verDetalle = (id) => {
     navigate(`/desafio-isa/detalles/${id}`);
   };
-
-  const agregarCarrito = (curso) => {
-    
-    
-    setCarrito([...carrito, curso]);
-
-    setCantidad(cantidad + 1);
-
-    console.log(carrito);
-  }; 
-  useEffect(() => {
-    getCursos();
-  }, []);
 
   return (
     <>
@@ -52,7 +34,7 @@ const Cursos = () => {
               <div className="card-body">
                 <h5 className="card-title">{curso.name}</h5>
                 <span>{curso.clave}</span>
-                <p className="card-text">Precio:{curso.price}</p>
+                <p className="card-text">Precio:${formatNumber(curso?.price || 0)}</p>
                 <div className="ms-5">
                   <Button
                     type="button "
@@ -63,10 +45,10 @@ const Cursos = () => {
                   >
                     Ver mas
                   </Button>
-                  <Button type="button" className="btn btn-success ms-5 mb-2" onClick={() => { agregarCarrito(curso) }}>
+                  <Button type="button" className="btn btn-success ms-5 mb-2" onClick={() => { agregarCarrito(curso.id) }}>
                     +
                   </Button>
-                  <Button type="button" className="btn btn-danger ms-2 mb-2" onClick={() => { agregarCarrito(curso) }}>
+                  <Button type="button" className="btn btn-danger ms-2 mb-2" onClick={() => { eliminarCarrito(curso.id) }}>
                     -
                   </Button>
                 </div>

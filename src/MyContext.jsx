@@ -73,7 +73,7 @@ const MyContext = ({ children }) => {
         total,
         cantidad,
         carrito,
-				formatNumber,
+		formatNumber,
         getCurso,
         agregarCarrito,
         eliminarCarrito,

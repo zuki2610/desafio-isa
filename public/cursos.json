@@ -5,7 +5,7 @@
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/exportaciones.jpg",
     "clave": ["Importaciones", "Cursos"],
     "name": "Importaciones",
-    "price": "1500$"
+    "price": 1500
   },
   {
     "desc": "Aprenderas a elegir los productos con mayor salida en el mercado, los que generaran mayores ganancias para ti",
@@ -13,7 +13,7 @@
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/productos.jpg",
     "clave": ["Cursos ", "Productos "],
     "name": "Productos con éxito",
-    "price": "2500$"
+    "price": 2500
   },
   {
     "desc": "Conoceras las mejores herramientas para emprender en este ambito, lograras generar ingresos al terminar este curso.",
@@ -21,7 +21,7 @@
     "img": "https://raw.githubusercontent.com/zuki2610/desafio-isa/main/public/digitaltransf.jpg",
     "clave": ["Cursos ", "Emprendimiento"],
     "name": "Emprendimiento Digital",
-    "price": "5000$"
+    "price": 5000
   }
 ]
 
