@@ -4,6 +4,7 @@ import { Image } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate } from "react-router-dom";
 import MyContext from "../MyContext";
+import Carrito from "./Carrito";
 
 const Header = () => {
   const { cantidad } = useContext(MyContext);
@@ -29,9 +30,7 @@ const Header = () => {
               <h2>Caroline Sada</h2>
             </div>
             <div>
-              <span className="carritoLleno hover5">
-                {cantidad}<i className="bi bi-cart-check-fill"></i>
-              </span>
+              <Carrito />
             </div>
           </div>
         </div>
