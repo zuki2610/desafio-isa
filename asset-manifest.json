@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/desafio-isa/static/css/main.c232de30.css",
+    "main.js": "/desafio-isa/static/js/main.30545ccd.js",
+    "static/media/bootstrap-icons.woff?": "/desafio-isa/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/desafio-isa/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/desafio-isa/index.html",
+    "main.c232de30.css.map": "/desafio-isa/static/css/main.c232de30.css.map",
+    "main.30545ccd.js.map": "/desafio-isa/static/js/main.30545ccd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c232de30.css",
+    "static/js/main.30545ccd.js"
+  ]
+}
