@@ -29,7 +29,7 @@ const Header = () => {
               <span>Emprende con:</span>
               <h2>Caroline Sada</h2>
             </div>
-            <div>
+            <div className="pt-5 mt-5">
               <Carrito />
             </div>
           </div>

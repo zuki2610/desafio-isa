@@ -7,11 +7,13 @@ import Header from "./Header";
 import { useParams } from "react-router-dom";
 import  Context  from "../MyContext";
 
+
 const Detalles = () => {
   const { id } = useParams();
   const {  getCurso, agregarCarrito, formatNumber, eliminarCarrito } = useContext(Context);
  
   const cursoActual = getCurso(id);
+
   return (
     <>
       <Header />

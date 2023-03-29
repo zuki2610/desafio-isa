@@ -12,7 +12,7 @@ const Carrito = () => {
         <thead>
           <tr>
             <th>Nombre</th>
-            <th>Cantidad</th>
+            <th className="ps-4 pe-4">Cantidad</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -20,10 +20,10 @@ const Carrito = () => {
           {carrito.map((curso) => (
             <tr key={curso.id}>
               <td>{curso.name}</td>
-              <td>{curso.count}</td>
+              <td className="ps-5 pe-3">{curso.count}</td>
               <td>
                 <button
-                  className="agregar"
+                  className="agregar btn btn-success me-3"
                   data-id={curso.id}
                   onClick={(e) => {
                     const id = e.target.dataset.id;
@@ -33,7 +33,7 @@ const Carrito = () => {
                   +
                 </button>
                 <button
-                  className="restar"
+                  className="restar btn btn-danger"
                   data-id={curso.id}
                   onClick={(e) => {
                     const id = e.target.dataset.id;

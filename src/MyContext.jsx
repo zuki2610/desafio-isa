@@ -40,11 +40,14 @@ const MyContext = ({ children }) => {
 		if (tempCurso) {
 			tempCurso.count += 1;
 			setCarrito([...carrito]);
+			console.log('if', tempCurso.count)
 		} else {
 			tempCurso = cursos.find(curso => curso.id === cursoId);
 			tempCurso.count = 1;
 			setCarrito([...carrito, tempCurso]);
+			console.log('else', tempCurso.count);
 		}
+		
 	};
 
 	const eliminarCarrito = (cursoId) => {
